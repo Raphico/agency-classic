@@ -1,0 +1,52 @@
+.browser {
+  display: flex;
+  position: relative;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 34em) {
+  .heading {
+    text-align: center;
+  }
+
+  .browser {
+    width: 345px;
+    height: 247px;
+  }
+
+  .features {
+    text-align: center;
+  }
+}
+
+@media (min-width: 34em)
+and (max-width: 52em) {
+  .heading {
+    text-align: center;
+  }
+
+  .browser {
+    width: 708px;
+    height: 508px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    --gap: 2rem;
+  }
+}
+
+@media (min-width: 52em) {
+  .browser {
+    width: 800px;
+    height: 550px;
+  }
+
+  .coreFeatures {
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+  }
+}

@@ -1,0 +1,7 @@
+@media (max-width: 34em) {
+  .core_feature {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

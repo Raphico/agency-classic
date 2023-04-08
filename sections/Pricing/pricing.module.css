@@ -1,0 +1,27 @@
+.plans {
+  margin-inline: auto;
+  max-width: 16em;
+  padding: 0.3em 0;
+  background-color: #f7f8fb;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.plan {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: var(--clr-dark-slate-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: var(--fs-500);
+  font-size: var(--fs-300);
+  transition: background 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.plan.active {
+  background-color: var(--clr-white);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

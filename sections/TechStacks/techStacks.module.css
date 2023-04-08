@@ -1,0 +1,42 @@
+.logos {
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 34em) {
+  .logos {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 34em)
+and (max-width: 52em) {
+  .logos {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 52em) {
+  .tech_stacks {
+    text-align: center;
+    place-items: center;
+  }
+
+  .logos {
+    grid-row-start: 1;
+  }
+}
+
+@media (min-width: 52em) {
+  .logos {
+    width: 700px;
+    height: 500px;
+  }
+
+  .tech_stacks {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}

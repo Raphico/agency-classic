@@ -1,0 +1,110 @@
+.hero {
+  margin-bottom: 5em;
+}
+
+@media (min-width: 34em) {
+  .hero {
+    margin-bottom: 7em;
+  }
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40em;
+  margin-inline: auto;
+}
+
+.puzzle,
+.chat_box,
+.wavy,
+.dotted_patterns_1,
+.dotted_patterns_2,
+.line_1,
+.line_2 {
+  position: absolute;
+}
+.chat_box {
+  top: 20%;
+  right: -20%;
+}
+.puzzle {
+  bottom: 0;
+  left: -20%;
+}
+
+.wavy {
+  top: 2%;
+  left: 20%;
+}
+
+.dotted_patterns_1 {
+  top: -5%;
+  right: -10%;
+}
+
+.dotted_patterns_2 {
+  bottom: -10%;
+  left: -10%;
+}
+
+.line_1 {
+  top: 12%;
+  left: -25%;
+}
+
+.line_2 {
+  top: -12%;
+  right: -20%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.mockup {
+  position: relative;
+  height: 520px;
+  width: 1000px;
+}
+
+.mockup_image {
+  transform: translateY(10%);
+  z-index: 1;
+}
+
+
+@media (max-width: 52em) {
+  .puzzle,
+  .chat_box,
+  .wavy,
+  .dotted_patterns_1,
+  .dotted_patterns_2,
+  .line_1,
+  .line_2 {
+    display: none;
+  }
+
+  .images {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .mockup {
+    width: 340px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 34em)
+and (max-width: 52em) {
+  .mockup {
+    width: 550px;
+    height: 300px;
+  }
+}
