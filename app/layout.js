@@ -1,8 +1,8 @@
 import './globals.css'
-import { DM_Sans } from "next/font/google"
+import { Lato } from "next/font/google"
 
-const dm_sans = DM_Sans({
-  weight: ['400', '500', '700'],
+const lato = Lato({
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap'
 })
@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={dm_sans.className}>
+    <html lang="en" className={lato.className}>
       <body>{children}</body>
     </html>
   )

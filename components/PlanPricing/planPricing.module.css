@@ -1,0 +1,42 @@
+.plan_pricing {
+  position: relative;
+  border: 1px solid #E0E2E4;
+  border-radius: 5px;
+}
+
+.plan_content {
+  padding: 3em 2em;
+}
+
+.plan_for {
+  margin-bottom: 2rem;
+}
+
+.plan {
+  align-items: center;
+}
+
+.price {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F8FA;
+  padding: 3em 2em;
+}
+
+.plan_pricing::before {
+  display: none;
+  content: "Recommended";
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  position: absolute;
+  background-color: var(--clr-dark-magenta);
+  color: var(--clr-white);
+  padding: 5px 8px;
+  border-radius: 5px;
+  top: -15px;
+  left: 10px;
+}
+
+.plan_pricing.recommended::before {
+  display: block;
+}

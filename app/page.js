@@ -1,15 +1,18 @@
 import { Navbar } from "../components";
-import { CoreFeatures, Features, Hero, Pricing, TechStacks } from "../sections";
+import { CoreFeatures, Features, Footer, FrequentlyAskedQuestions, Hero, Pricing, TechStacks, Testimonials } from "../sections";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Features />
       <CoreFeatures />
       <TechStacks />
       <Pricing />
-    </div>
+      <Testimonials />
+      <FrequentlyAskedQuestions />
+      <Footer />
+    </>
   )
 }

@@ -1,0 +1,19 @@
+.testimonials_section {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.testimonials {
+  margin-top: 3rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 30%;
+  
+  overflow-x: auto;
+}
+
+.arrows {
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  --gap: 2rem;
+}

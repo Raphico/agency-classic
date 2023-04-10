@@ -4,11 +4,16 @@ import styles from "./features.module.css"
 
 export default function Features() {
   const featureElements = features.map(({ img, name, description }) =>
-    <Feature key={name} img={img} name={name} description={description} />
+    <Feature 
+      key={name} 
+      img={img} 
+      name={name} 
+      description={description} 
+    />
   )
 
   return (
-    <div className="container mb">
+    <div name="features" className="container mb">
       <div>
         <h3 className="fs-600 fw-700 text-dark-slate-blue text-center">
           Features of the product

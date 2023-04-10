@@ -1,0 +1,9 @@
+.heading {
+  margin-bottom: 2rem;
+}
+
+.frequentlyAskedQuestions {
+  width: min(90%, 40em);
+  margin-inline: auto;
+  --gap: 0.5rem;
+}

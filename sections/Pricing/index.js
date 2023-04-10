@@ -3,8 +3,7 @@
 import { useState } from "react"
 import styles from "./pricing.module.css"
 import { plansPricing } from "@/components/constants"
-import Image from "next/image"
-import { HiOutlineArrowNarrowRight } from "react-icons/hi"
+import { PlanPricing } from "@/components/components"
 
 export default function Pricing() {
   const [active, setActive] = useState("monthly")
@@ -12,45 +11,19 @@ export default function Pricing() {
   const pricingElements = plansPricing.map(pricing => {
     if (pricing.type !== active) return;
     return (
-      <div key={pricing.id}>
-        <Image 
-          src={pricing.icon}
-          alt=""
-          width={72}
-          height={64}
-        />
-
-        <p className="fs-501 fw-700 text-dark-slate-blue">
-          {pricing.for}
-        </p>
-
-        {pricing.plans.map(({ id, ticked, plan }) => 
-          <p key={id} className="flex text-slate-gray">
-            <Image 
-              src={ticked ? "/ticked.svg" : "/not-ticked.svg"}
-              alt="part of the plan"
-              width={20}
-              height={20}
-            />
-            {plan}
-          </p>
-        )}
-
-        <div className="flex">
-          <div>
-            <p className="text-slate-gray">Starting from</p>
-            <p className="fs-501 text-dark-magenta">
-              {pricing.price}<span className="fs-500">/mo</span>
-            </p>
-          </div>
-          <HiOutlineArrowNarrowRight size={20} color="slate blue" />
-        </div>
-      </div>
+      <PlanPricing
+        key={pricing.id}
+        name={pricing.name}
+        plans={pricing.plans}
+        price={pricing.price}
+        recommended={pricing.recommended}
+        icon={pricing.icon}
+      />
     )
   })
 
   return (
-    <div className="flow">
+    <div name="pricing" className={`${styles.pricing} mb`}>
       <div className="text-center">
         <h2 className="fs-600 fw-700 text-dark-slate-blue">
           What deal suit you perfectly?
@@ -75,7 +48,7 @@ export default function Pricing() {
         </button>
       </div>
 
-      <div className={`${styles.plans_pricing}`}>
+      <div className={`${styles.plan_pricing} grid`}>
         {pricingElements}
       </div>
     </div>

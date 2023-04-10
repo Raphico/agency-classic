@@ -25,3 +25,19 @@
   background-color: var(--clr-white);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+.plan_pricing {
+  margin-inline: auto;
+  width: min(90%, 60em);
+  margin-top: 3em;
+}
+
+@media (min-width: 34em) {
+  .plan_pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pricing > * + * {
+  margin-top: 3rem;;
+}

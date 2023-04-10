@@ -3,7 +3,7 @@ import styles from "./hero.module.css"
 
 export default function Hero() {
   return (
-    <div className={`${styles.hero} bg-light`}>
+    <div name="home" className={`${styles.hero} bg-light`}>
       <div className={`${styles.heading}`}>
         <Image 
           src="/startupLogo.svg"

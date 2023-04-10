@@ -1,23 +1,23 @@
 export const navItems = [
   {
     name: "Home",
-    link: "#home"
+    link: "home"
   },
   {
-    name: "Service",
-    link: "#service"
+    name: "Features",
+    link: "features"
   },
   {
     name: "Pricing",
-    link: "#pricing"
+    link: "pricing"
   },
   {
-    name: "Feedbacks",
-    link: "#feedbacks"
+    name: "Testimonials",
+    link: "testimonials"
   },
   {
-    name: "News",
-    link: "#news"
+    name: "Q/A",
+    link: "q-a"
   }
 ]
 
@@ -71,7 +71,7 @@ export const plansPricing = [
   {
     id: 1,
     type: "monthly",
-    for: "For Team pack",
+    name: "For Team pack",
     icon: "/team.svg",
     recommended: false,
     price: "29.99",
@@ -101,7 +101,7 @@ export const plansPricing = [
   {
     id: 2,
     type: "monthly",
-    for: "For Organization pack",
+    name: "For Organization pack",
     icon: "/organization.svg",
     recommended: true,
     price: "49.99",
@@ -131,7 +131,7 @@ export const plansPricing = [
   {
     id: 3,
     type: "annual",
-    for: "For Team pack",
+    name: "For Team pack",
     icon: "/team.svg",
     recommended: false,
     price: "99.99",
@@ -161,8 +161,8 @@ export const plansPricing = [
   {
     id: 4,
     type: "annual",
-    for: "For Organization pack",
-    icon: "/team.svg",
+    name: "For Organization pack",
+    icon: "/organization.svg",
     recommended: true,
     price: "199.99",
     plans: [
@@ -179,46 +179,46 @@ export const plansPricing = [
         plan: "Total assessment corrections with free download access system"
       },
       {
-        ticked: false,
+        ticked: true,
         plan: "Unlimited download of courses on the mobile app contents"
       },
     ]
   }
 ]
 
-export const feedbacks = [
+export const testimonials = [
   {
-    feedback: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
+    testimonial: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
     name: "Minnie Horn",
     at: "@hello.minnie",
-    avatar: ""
+    avatar: "/avatar6.png"
   },
   {
-    feedback: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
+    testimonial: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
     name: "Minnie Horn",
     at: "@hello.minnie",
     avatar: "/avatar1.png"
   },
   {
-    feedback: "I have seldom experienced such an efficient help and support like from you! Thank you so much. We will do all the bookings during the next few days and I will revert to you with the end result",
+    testimonial: "I have seldom experienced such an efficient help and support like from you! Thank you so much. We will do all the bookings during the next few days and I will revert to you with the end result",
     name: "Paseka Nku",
     at: "@hey.nku",
     avatar: "/avatar2.png"
   },
   {
-    feedback: "I would just like to compliment Estelle Pestana. She has been most professional and gone to great lengths to assist me. Her patience with me as I continuously changed my plans is to be commended. Her service re-affirms why I always choose to book through an agency instead of directly. Thank you",
+    testimonial: "I would just like to compliment Estelle Pestana. She has been most professional and gone to great lengths to assist me. Her patience with me as I continuously changed my plans is to be commended.",
     name: "Veona Watson",
     at: "@hi.veona",
     avatar: "/avatar3.png"
   },
   {
-    feedback: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+    testimonial: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional.",
     name: "Thais Carballal",
     at: "@hello.minnie",
-    avatar: "@myself.thais"
+    avatar: "/avatar4.png"
   },
   {
-    feedback: "Thank you for all your help. Your service was excellent and very FAST.",
+    testimonial: "Thank you for all your help. Your service was excellent and very FAST. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
     name: "Cherice Justin",
     at: "@cherice.me",
     avatar: "/avatar5.png"
@@ -227,22 +227,27 @@ export const feedbacks = [
 
 export const frequentlyAskedQuestions = [
   {
+    id: 1,
     question: "How much does it cost to be a credit card merchant?",
     answer: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },
   {
+    id: 2,
     question: "How can I open a merchant account?",
     answer: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },
   {
+    id: 3,
     question: "How long does the application take?",
     answer: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },
   {
+    id: 4,
     question: "Can I make payment outside of Hong Kong?",
     answer: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },
   {
+    id: 5,
     question: "How do I get the payment complete?",
     answer: "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   }

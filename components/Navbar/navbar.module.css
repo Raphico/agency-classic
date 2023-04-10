@@ -1,6 +1,8 @@
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   padding: 1.5em 0; 
   transition: padding 300ms ease-out, box-shadow 300ms ease-out, background 300ms ease-out;
   z-index: 9999;
@@ -13,7 +15,7 @@
 
 .nav.scrolled {
   padding: 0.8rem 0;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
   background-color: var(--clr-white);
 }
 
@@ -21,6 +23,10 @@
   display: none;
   cursor: pointer;
   z-index: 9999;
+}
+
+.nav_link {
+  cursor: pointer;
 }
 
 .nav_link:hover,

@@ -5,7 +5,7 @@
 @media (min-width: 52em) {
   .features {
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 3rem;
+    --gap: 3rem;
   }
 }
 
@@ -13,7 +13,7 @@
 and (max-width: 52em) {
   .features {
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 3rem;
+    --gap: 3rem;
   }
 }
 

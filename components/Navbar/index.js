@@ -2,11 +2,11 @@
 
 import { navItems } from "@/components/constants"
 import Image from "next/image"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 import { HiOutlineMenuAlt1 } from "react-icons/hi"
 import { IoMdClose } from "react-icons/io"
 import styles from "./navbar.module.css"
+import { Link } from "react-scroll"
 
 export default function Navbar() {
   const [nav, setNav] = useState(false)
@@ -26,9 +26,9 @@ export default function Navbar() {
       <Link
         className={`${styles.nav_link} text-dark-blue fs-300 ${
           active === name ? styles.active : ""
-        }`} 
-        href={link} 
-        scroll
+        }`}
+        to={link}
+        offset={-50}
         onClick={() => {
           setActive(name)
           toggleNav()
