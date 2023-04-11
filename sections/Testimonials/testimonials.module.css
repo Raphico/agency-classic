@@ -11,6 +11,19 @@
   overflow-x: auto;
 }
 
+@media (max-width: 34em) {
+  .testimonials {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media (min-width: 34em)
+and (max-width: 52em) {
+  .testimonials {
+    grid-auto-columns: 60%;
+  }
+}
+
 .arrows {
   align-items: center;
   justify-content: center;
